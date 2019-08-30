@@ -1,0 +1,52 @@
+Gitとは
+⇒成果物を管理するソフト
+
+GitとGitHubの違い
+⇒Git:ローカルにあるソフト
+　Github：ネットワーク上にあるやつ
+　
+Githubとは
+⇒ブラウザで開ける共有サーバーみたいなもの
+　ここでファイルの共有ができる
+
+git&github 用語集
+
+①リポジトリ
+ローカルリポジトリ
+⇒ローカルな環境で作業する場所
+リモートリポジトリ
+⇒ネットワーク上（github）で作業する場所
+
+コマンド集
+git commit~pushまで
+①git init
+ここはローカルリポジトリですよっていう宣言
+②git add *
+すべてのファイルをステージにあげる（ステージング）
+
+③git commit -m "first commit"
+ステージにあるファイルをコミットする
+その際のコミットメッセージが""の中身として表示される
+例えるなら
+gitにおけるcommitはファイルを送信する最終準備
+
+④git remote add ~"自分のリモートリポジトリのURL"
+gitからgithubのどこに送るかを設定している
+※最初の1回だけでOKです。
+
+⑤git push -u origin master
+commitした内容を全部送信します。
+masterっていうところに送信されますよ
+
+clone編
+
+cloneとは
+⇒github上のファイルをローカルに落としてくること
+（ダウンロードに近い）
+
+手順
+①リモートリポジトリのclone or downloadのボタン押下
+②URLコピーする
+③git init
+④git clone ~URL~
+を行えばgithubのフォルダが落とせるよ。
